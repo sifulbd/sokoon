@@ -1,0 +1,35 @@
+.section-separator {
+    padding: 100px 0;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+.title {
+    margin-bottom: 60px;
+}
+.login-area {
+    padding: 30px;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+#transection-area {
+    display: none;
+}
+
+.deposit {
+    background-color: slateblue;
+}
+.balance {
+    background-color: orange;
+}
+.withdraw {
+    background-color: lightcoral;
+}
+.status {
+    margin: 20px 0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
