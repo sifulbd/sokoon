@@ -83,7 +83,7 @@ minus1.addEventListener('click', function() {
     + parseInt(document.getElementById('price2').innerText) ;
 
     subtotalPrice(pricer);
-})
+});
 
 plus2.addEventListener('click', function() {
     const totalCountnumber = plusIncrease(parseInt(counter2.value));
@@ -111,4 +111,28 @@ minus2.addEventListener('click', function() {
     + parseInt(document.getElementById('price2').innerText) ;
 
     subtotalPrice(pricer);
-})
+});
+
+const removePhone = document.getElementById('removePhone');
+const phone = document.getElementById('mobile-area');
+
+const removeCase = document.getElementById('remove-case');
+const rmCase = document.getElementById('case-area');
+
+removePhone.addEventListener('click', function() {
+    phone.style.display = 'none';
+    let pricer = parseInt(document.getElementById('price1').innerText) 
+    + parseInt(document.getElementById('price2').innerText) ;    
+
+    pricer  = pricer - parseInt(document.getElementById('price1').innerText);
+    subtotalPrice(pricer);
+});
+
+removeCase.addEventListener('click', function() {
+    rmCase.style.display = 'none';
+    let pricer = parseInt(document.getElementById('price1').innerText) 
+    + parseInt(document.getElementById('price2').innerText) ;    
+
+    pricer  = pricer - parseInt(document.getElementById('price2').innerText);
+    subtotalPrice(pricer);
+}); 
