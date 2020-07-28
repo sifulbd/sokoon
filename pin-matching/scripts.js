@@ -46,7 +46,7 @@
       activeDisplay.style.display = "none";
       const didNotMatch = document.getElementById('notMatch-notify');
       didNotMatch.style.display = "block";
-
+ 
       // action try to left  (assignment-extra part)
       const option = document.getElementById('option').innerText;
       const currentOption = parseFloat(option);
